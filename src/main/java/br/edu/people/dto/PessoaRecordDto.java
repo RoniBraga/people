@@ -1,5 +1,7 @@
 package br.edu.people.dto;
 
-public record PessoaRecordDto(String nome, String email, long telefone) {
+import jakarta.validation.constraints.NotBlank;
+
+public record PessoaRecordDto(@NotBlank String nome, @NotBlank String email, long telefone) {
     
 }
